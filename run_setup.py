@@ -21,32 +21,32 @@
 
 
 # If running on Vast.AI, copy the code in this cell into a new notebook. Run it, then launch the `dreambooth_runpod_joepenna.ipynb` notebook from the jupyter interface.
-# get_ipython().system('git clone https://github.com/JoePenna/Dreambooth-Stable-Diffusion')
+# get_ipython().system('git clone https://github.com/obaid/Dreambooth-Stable-Diffusion.git')
 
 
 # In[ ]:
 
 
 # BUILD ENV
-get_ipython().system('pip install omegaconf')
-get_ipython().system('pip install einops')
-get_ipython().system('pip install pytorch-lightning==1.6.5')
-get_ipython().system('pip install test-tube')
-get_ipython().system('pip install transformers')
-get_ipython().system('pip install kornia')
-get_ipython().system('pip install -e git+https://github.com/CompVis/taming-transformers.git@master#egg=taming-transformers')
-get_ipython().system('pip install -e git+https://github.com/openai/CLIP.git@main#egg=clip')
-get_ipython().system('pip install setuptools==59.5.0')
-get_ipython().system('pip install pillow==9.0.1')
-get_ipython().system('pip install torchmetrics==0.6.0')
-get_ipython().system('pip install -e .')
-get_ipython().system('pip install protobuf==3.20.1')
-get_ipython().system('pip install gdown')
-get_ipython().system('pip install -qq diffusers["training"]==0.3.0 transformers ftfy')
-get_ipython().system('pip install -qq "ipywidgets>=7,<8"')
-get_ipython().system('pip install huggingface_hub')
-get_ipython().system('pip install ipywidgets==7.7.1')
-get_ipython().system('pip install captionizer==1.0.1')
+get_ipython().system('conda install omegaconf')
+get_ipython().system('conda install einops')
+get_ipython().system('conda install pytorch-lightning==1.6.5')
+get_ipython().system('conda install test-tube')
+get_ipython().system('conda install transformers')
+get_ipython().system('conda install kornia')
+get_ipython().system('conda install -e git+https://github.com/CompVis/taming-transformers.git@master#egg=taming-transformers')
+get_ipython().system('conda install -e git+https://github.com/openai/CLIP.git@main#egg=clip')
+get_ipython().system('conda install setuptools==59.5.0')
+get_ipython().system('conda install pillow==9.0.1')
+get_ipython().system('conda install torchmetrics==0.6.0')
+get_ipython().system('conda install -e .')
+get_ipython().system('conda install protobuf==3.20.1')
+get_ipython().system('conda install gdown')
+get_ipython().system('conda install -qq diffusers["training"]==0.3.0 transformers ftfy')
+get_ipython().system('conda install -qq "ipywidgets>=7,<8"')
+get_ipython().system('conda install huggingface_hub')
+get_ipython().system('conda install ipywidgets==7.7.1')
+get_ipython().system('conda install captionizer==1.0.1')
 
 
 # In[ ]:
@@ -54,6 +54,12 @@ get_ipython().system('pip install captionizer==1.0.1')
 
 get_ipython().system('gdown "1FXaXkbgOYT3hQHMn9Own-16YT0SEH1He&confirm=t"')
 get_ipython().system('mv sd-v1-4-full-ema.ckpt model.ckpt')
+
+
+get_ipython().system('gdown "1X7sVxyIgQPU8UtZXhkv24SIcyxaoVRZR&confirm=t"')
+get_ipython().system('unzip training_data.zip')
+
+
 
 # # Regularization Images (Skip this section if you are uploading your own or using the provided images)
 
